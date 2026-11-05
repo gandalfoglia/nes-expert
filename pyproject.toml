@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nespresso"
+version = "0.1.0"
+description = "Unofficial terminal control for a Nespresso Expert & Milk"
+readme = "README.md"
+requires-python = ">=3.9"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "nespresso contributors" }]
+keywords = ["nespresso", "bluetooth", "ble", "coffee"]
+classifiers = [
+    "Environment :: Console",
+    "Environment :: MacOS X",
+    "Operating System :: MacOS",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Home Automation",
+]
+dependencies = ["bleak>=0.21"]
+
+[project.scripts]
+nespresso = "nespresso.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

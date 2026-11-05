@@ -1,0 +1,18 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+dist/
+build/
+.venv/
+venv/
+.nespresso_auth.json
+
+# Virtualenv created in the project root. Do not publish it.
+/bin/
+/lib/
+/include/
+/share/
+/pyvenv.cfg
+
+.DS_Store
